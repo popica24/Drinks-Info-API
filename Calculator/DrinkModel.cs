@@ -70,9 +70,15 @@ namespace Calculator
             var x = this.GetType().GetProperties();
             foreach (var property in x)
             {
-                if (property.GetValue(this)!=null)
-                    result += property.GetValue(this).ToString()+'\n'+'\n';
-            
+                if(property.Name == "strDrinkThumb" && property.GetValue(this)!=null)
+                {
+                    result += property.GetValue(this).ToString()+"/preview" + '\n' + '\n';
+                    continue;
+                }
+                if (property.GetValue(this) != null)
+                {
+                    result += property.GetValue(this).ToString() + '\n' + '\n';
+                }
                         }
            
             result += "----------------------------------------------------------------";

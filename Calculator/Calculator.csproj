@@ -54,6 +54,8 @@
     <Compile Include="DrinkModel.cs" />
     <Compile Include="DrinkProcessor.cs" />
     <Compile Include="DrinkSearchParameters.cs" />
+    <Compile Include="IngredientModel.cs" />
+    <Compile Include="IngredientSearchParameters.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
